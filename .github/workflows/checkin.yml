@@ -16,6 +16,7 @@ jobs:
       - name: 安装依赖
         run: |
           pip install -r requirements.txt
+          pip install playwright
           python -m playwright install chromium
           python -m playwright install-deps chromium
       - name: 执行签到
